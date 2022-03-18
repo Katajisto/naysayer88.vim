@@ -42,22 +42,12 @@ highlight! PreProc guifg=#9DE3C0 guibg=NONE gui=NONE
 "highlight link PreCondit PreProc
 
 highlight! link Type PreProc
-"highlight! link StorageClass Type
-"highlight! link Structure Type
-"highlight! link Typedef Type
 
 highlight! link Special Default
 highlight! link SpecialChar String
-"highlight! link Tag Special
-"highlight! link Delimiter Special
 highlight SpecialComment guifg=#87875f guibg=NONE gui=reverse
-"highlight! link Debug Special
 
 highlight Underlined guifg=#af5f5f guibg=NONE gui=NONE
-
-"highlight Ignore guifg=#af5f5f guibg=NONE gui=NONE
-
-"highlight Error guifg=#af5f5f guibg=NONE gui=NONE
 
 highlight! link Todo Comment
 
@@ -72,6 +62,14 @@ highlight link Title Default
 highlight! link csEndColon Default
 highlight! link csLogicSymbols Default
 
+" Markdown
+highlight link markdownH1 Statement
+highlight link markdownH2 markdownH1
+highlight link markdownH3 markdownH1
+highlight link markdownH4 markdownH1
+highlight link markdownH5 markdownH1
+highlight link markdownH6 markdownH1
+
 " Window UI
 highlight Cursor                     guifg=#000000       guibg=#dfdfaf      gui=NONE
 highlight MoreMsg                    guifg=#dfaf87       guibg=NONE         gui=NONE
@@ -80,5 +78,9 @@ highlight Question                   guifg=#875f5f       guibg=NONE         gui=
 highlight Search                     guifg=#dfdfaf       guibg=#878787      gui=NONE
 highlight PmenuSel                   guifg=#dfdfaf       guibg=#875f5f      gui=NONE
 highlight MatchParen                 guifg=#dfdfaf       guibg=#875f5f      gui=NONE
-highlight VertSplit                  guifg=#000000       guibg=NONE         gui=NONE
+highlight VertSplit                  guifg=#042327       guibg=#042327     
 highlight! EndOfBuffer               guifg=#042327       guibg=#042327      gui=NONE
+highlight! ColorColumn	             			 guibg=#07383d
+highlight! Pmenu						 guibg=#053036	    gui=NONE
+highlight! LineNr		     guifg=#d6b48b
+highlight! CursorLine		     guifg=#042327	guibg=#042327
